@@ -3,10 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Category extends Model
 {
-    use softDeletes;
+    use SoftDeletes;
 
     protected $fillable = ['cat_name', 'description'];
     protected $dates = ['deleted_at'];

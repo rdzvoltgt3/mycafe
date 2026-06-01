@@ -15,10 +15,13 @@ class ItemFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'category_id' => $this->fake->numberBetween(1, 2),
+            'category_id' => $this->faker->numberBetween(1, 2),
             'price' => $this->faker->randomFloat(2, 1000, 100000),
             'description' => $this->faker->text(),
-            'image' => $this->faker->imageUrl(),
+            'image' => fake()->randomElement(
+                ['https://images.unsplash.com/photo-1612929633738-8fe44f7ec841',
+                 'https://images.unsplash.com/photo-1578160112054-954a67602b88',
+                 'https://images.unsplash.com/photo-1586765501019-cbe3973ef8fa']),
             'is_active' => $this ->faker->boolean(),
         ];
     }

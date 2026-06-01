@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Item extends Model
 {
-    use softDeletes;
+    use SoftDeletes, HasFactory;
 
     protected $fillable = ['name', 'description', 'price', 'category_id', 'image', 'is_active', 'created_at', 'updated_at'];
     protected $dates = ['deleted_at'];  
