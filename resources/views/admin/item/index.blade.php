@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
                 <h3>Daftar Menu</h3>
-                <p class="text-subtitle text-muted">Berbagai pilihan menu terbaik</p>
+                <p class="text-subtitle text-muted">Berbagai pilihan menu</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <a href="{{ route('items.create') }}" class="btn btn-primary float-start float-lg-end">

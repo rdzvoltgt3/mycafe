@@ -113,7 +113,7 @@
 
         <!-- Brand -->
         <div class="cafe-footer-top">
-            <a href="#" class="cafe-footer-brand">My<span>Cafe</span></a>
+            <a href="#" class="cafe-footer-brand">MyCafe</a>
             <p class="cafe-footer-tagline">Ngafe di sini sambil belajar!</p>
         </div>
 
@@ -145,13 +145,6 @@
     </div>
 
     <!-- Copyright -->
-    <div class="cafe-footer-bottom">
-        <span>
-            <i class="fas fa-copyright me-1"></i>
-            <a href="#">MyCafe</a>
-            <span id="currentYear"></span>. All rights reserved.
-        </span>
-    </div>
 </footer>
 
 <script>

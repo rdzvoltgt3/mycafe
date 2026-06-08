@@ -209,7 +209,7 @@
 {{-- ── Hero ── --}}
 <div class="menu-hero">
     <h1>Menu Kami</h1>
-    <p>Berbagai pilihan menu terbaik</p>
+    <p>Berbagai pilihan menu</p>
 </div>
 
 {{-- ── Filter Pills (purely visual, no JS required) ── --}}
