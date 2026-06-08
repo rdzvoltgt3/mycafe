@@ -199,7 +199,7 @@
                 Tunjukkan kode bayar ini ke kasir untuk menyelesaikan pembayaran. Terima kasih!
             @elseif ($order->payment_method == 'qris')
                 <i class="fa fa-check-circle me-1" style="color:#16a34a;"></i>
-                Pembayaran sukses. Duduk manis ya, pesanan kamu segera kami proses!
+                Pembayaran sukses. Pesanan kamu segera kami proses!
             @endif
         </div>
 
