@@ -80,7 +80,7 @@
                                             </button>
                                         </form>
                                     @endif
-                                @elseif(Auth::user()->role->role_name == 'chef' && $order->status == 'settlement')
+                                @elseif(Auth::user()->role->role_name == 'barista' && $order->status == 'settlement')
                                     <form action="{{ route('orders.updateStatus', $order->id) }}" method="POST">
                                         @csrf
                                         <button type="submit" class="btn btn-success btn-sm">

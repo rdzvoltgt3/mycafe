@@ -33,7 +33,7 @@ Route::middleware('role:admin')->group(function (){
     Route::resource('users', UserController::class);
 });
 
-Route::middleware('role:admin|cashier|chef')->group(function (){
+Route::middleware('role:admin|cashier|barista')->group(function (){
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('orders', OrderController::class);
     Route::post('items/update-status/{order}', [ItemController::class, 'updateStatus'])->name('items.updateStatus');
