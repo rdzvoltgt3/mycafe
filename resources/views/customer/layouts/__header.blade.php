@@ -26,6 +26,7 @@
     <!-- Template -->
     <link href="{{ asset('assets/customer/css/style.css') }}" rel="stylesheet">
 
+
     <!-- ===================== GLOBAL DESIGN TOKENS ===================== -->
     <style>
         :root {
