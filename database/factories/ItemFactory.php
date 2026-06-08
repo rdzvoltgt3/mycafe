@@ -2,12 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Item;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends Factory<Item>
- */
 class ItemFactory extends Factory
 {
 
@@ -18,11 +14,12 @@ class ItemFactory extends Factory
             'category_id' => $this->faker->numberBetween(1, 2),
             'price' => $this->faker->randomFloat(2, 1000, 100000),
             'description' => $this->faker->text(),
-            'image' => fake()->randomElement(
-                ['https://images.unsplash.com/photo-1612929633738-8fe44f7ec841',
-                 'https://images.unsplash.com/photo-1578160112054-954a67602b88',
-                 'https://images.unsplash.com/photo-1586765501019-cbe3973ef8fa']),
-            'is_active' => $this ->faker->boolean(),
+            'img' => fake()->randomElement(
+                ['https://images.unsplash.com/photo-1591325418441-ff678baf78ef',
+                'https://plus.unsplash.com/premium_photo-1668143358351-b20146dbcc02',
+                'https://images.unsplash.com/photo-1738681335816-8e0df0aa9824']
+            ),
+            'is_active' => $this->faker->boolean(),
         ];
     }
 }
